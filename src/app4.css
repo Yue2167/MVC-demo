@@ -1,0 +1,35 @@
+@keyframes change {
+  0% {
+    background-color: red;
+  }
+  15% {
+    background-color: orange;
+  }
+  29% {
+    background-color: yellow;
+  }
+  43% {
+    background-color: green;
+  }
+  57% {
+    background-color: rgb(134, 210, 134);
+  }
+  79% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+
+#app4 .circle {
+  border: 1px solid purple;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-top: 5vw;
+  margin-left: 5vw;
+}
+#app4 .circle.active {
+  animation: change 5s infinite alternate linear;
+}
